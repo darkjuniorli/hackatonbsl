@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="unknown" id="">
+   <head>
+      <title>
+         Rellenar Todos los Campos*
+      </title>
+      <script>
+         //App.performTransaction("250000001","27000000K","1234");
+         function performTraspaso(){
+         	var txtVendedor = document.getElementById("txtVendedor").value;
+         	var txtRutVendedor = document.getElementById("txtRutVendedor").value;
+         	var txtComprador = document.getElementById("txtComprador").value;
+         	var txtRutComprador = document.getElementById("txtRutComprador").value;
+         	var txtCodAsset = document.getElementById("txtCodAsset").value;
+
+         	App.performTransaction(txtVendedor,txtRutComprador,"1234")
+         }
+      </script>
+      <!-- Meta Tags -->
+	  <meta charset="utf-8">
+      <meta name="generator" content="Wufoo">
+      <meta name="robots" content="index">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/yase.js" type="text/javascript"></script>
+	  <script src="./js/Transaccion.debug.js" type="text/javascript"></script>
+
+      <!-- CSS -->
+      <link href="estylo01.css" rel="stylesheet">
+      <!--[if lt IE 10]>
+      <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <style>
+         @-webkit-keyframes rotate {
+         100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg); } }
+         @keyframes rotate {
+         100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg); } }
+         @-webkit-keyframes loop {
+         0% {
+         stroke-dasharray: 20, 100;
+         stroke-dashoffset: 30;
+         -webkit-animation-timing-function: cubic-bezier(0.3, 0, 1, 1);
+         animation-timing-function: cubic-bezier(0.3, 0, 1, 1); }
+         40% {
+         stroke-dasharray: 60, 70;
+         stroke-dashoffset: -10;
+         -webkit-animation-timing-function: cubic-bezier(0, 0, 0.9, 1);
+         animation-timing-function: cubic-bezier(0, 0, 0.9, 1); }
+         85% {
+         stroke-dasharray: 20, 100; }
+         100% {
+         stroke-dashoffset: -90; } }
+         @keyframes loop {
+         0% {
+         stroke-dasharray: 20, 100;
+         stroke-dashoffset: 30;
+         -webkit-animation-timing-function: cubic-bezier(0.3, 0, 1, 1);
+         animation-timing-function: cubic-bezier(0.3, 0, 1, 1); }
+         40% {
+         stroke-dasharray: 60, 70;
+         stroke-dashoffset: -10;
+         -webkit-animation-timing-function: cubic-bezier(0, 0, 0.9, 1);
+         animation-timing-function: cubic-bezier(0, 0, 0.9, 1); }
+         85% {
+         stroke-dasharray: 20, 100; }
+         100% {
+         stroke-dashoffset: -90; } }
+      </style>
+   </head>
+   <body
+      id="public"  class="noI"  onorientationchange="window.scrollTo(0, 1)"
+      >
+      <div
+         id="container"
+         class="ltr ">
+         <h1 id="logo">
+            <a href="index01.html" title="Powered by Alone Form">Alone Form</a>
+         </h1>
+         <div id="form1" name="form1" class="wufoo topLabel page1" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+            action="ACCION METODO A PONER">
+            <header id="header" class="info">
+               <h2 class="0">Rellenar Todos los Campos*</h2>
+               <div class="0">Nombres y Rut</div>
+            </header>
+            <ul>
+               <li id="fo1li1" data-wufoo-field data-field-type="text" 		class="notranslate      ">
+                  <label class="desc" id="title1" for="txtVendedor">
+                  Nombre Vendedor
+                  <span id="req_1" class="req">*</span>
+                  </label>
+                  <div>
+                     <input id="txtVendedor" 			name="txtVendedor" 			type="text" 			class="field text medium" 			value="" 						maxlength="255" 						tabindex="1" 			onkeyup=" " 						onchange="" 			      			required 			placeholder="" 			/>
+                  </div>
+               </li>
+               <li id="fo1li2" 		class="notranslate      ">
+                  <label class="desc " id="title2" for="txtRutVendedor">
+                  Rut
+                  <span id="req_2" class="req">*</span>
+                  </label>
+                  <div>
+                     <input id="txtRutVendedor" 			name="txtRutVendedor" 			        type="text"       			class="field text nospin medium"  			value="" 						tabindex="2" 			onkeyup=" " 						onchange="" 			      placeholder=""      required       			/>
+                  </div>
+               </li>
+               <li id="fo1li1" data-wufoo-field data-field-type="text" 		class="notranslate      ">
+                  <label class="desc" id="title1" for="Field1">
+                  Nombre Comprador
+                  <span id="req_1" class="req">*</span>
+                  </label>
+                  <div>
+                     <input id="txtComprador" 			name="txtComprador" 			type="text" 			class="field text medium" 			value="" 						maxlength="255" 						tabindex="1" 			onkeyup=" " 						onchange="" 			      			required 			placeholder="" 			/>
+                  </div>
+               </li>
+               <li id="fo1li2" 		class="notranslate      ">
+                  <label class="desc " id="title2" for="Field2">
+                  Rut
+                  <span id="req_2" class="req">*</span>
+                  </label>
+                  <div>
+                     <input id="txtRutComprador" 			name="Field2" 			        type="text"       			class="field text nospin medium"  			value="" 						tabindex="2" 			onkeyup="" 						onchange="" 			      placeholder=""      required       			/>
+                  </div>
+               </li>
+               <li id="fo1li1" data-wufoo-field data-field-type="text" 		class="notranslate      ">
+                  <label class="desc" id="txtCodigo" for="txtVendedor">
+                  Codigo Activo
+                  <span id="req_1" class="req">*</span>
+                  </label>
+                  <div>
+                     <input id="txtCodAsset" 			name="txtVendedor" 			type="text" 			class="field text medium" 			value="" 						maxlength="255" 						tabindex="1" 			onkeyup=" " 						onchange="" 			      			required 			placeholder="" 			/>
+                  </div>
+               </li>
+               <li class="buttons ">
+                  <div>
+                     <button id="saveForm"
+                        value="Realizar Traspaso"
+                        onmousedown="performTraspaso();"
+                        style="margin: 5px;">Realizar Traspaso</button>
+                  </div>
+               </li>
+               <img src="img/codilector.png" width="101" height="100" alt=""/>
+               <li class="hide">
+                  <label for="comment">Do Not Fill This Out</label>
+                  <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                  <input type="hidden" id="idstamp" name="idstamp" value="lPUg+o+i6qQs39pVWTgkp73x5jnWclPw+Fay94ZvvAE=" />
+                  <input type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:null}" />
+                  <input type="hidden" id="clickOrEnter" name="clickOrEnter" value="" />
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!--container-->
+      <style type="text/css">
+         @import url("estylo01.css");
+      </style>
+</html>

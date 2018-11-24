@@ -1,0 +1,18 @@
+namespace cl.hackaton.blockchain
+
+asset Commodity identified by codigo {
+    o String codigo
+    o String description
+    --> Trader owner
+}
+
+participant Trader identified by tradeId {
+    o String tradeId
+    o String name
+    o String[] assetsId
+}
+
+transaction Trade {
+    --> Commodity commodity
+    --> Trader newOwner
+}

@@ -1,0 +1,28 @@
+/**
+ * Rastrea traspaso de un producto de un propietario a otro
+ * @param {cl.hackaton.blockchain.Trade} trade - la negociacion a ser procesada
+ * @transaction
+ */
+
+async function tradeCommodity(trade) {
+    let seller = trade.commodity.owner;
+    let buyer = trade.newOwner;
+    let commodityId = trade.commodity.codigo;
+  
+    trade.commodity.owner = buyer;
+  	
+  	let index = seller.assetsId.findIndex(function(element) {
+	  return element = commodityId;
+	});
+
+	if (index > -1) {
+	  seller.assetsId.splice(index, 1);
+	  buyer.assetsId.push(commodityId);
+    }
+  
+    let assetRegistry = await getAssetRegistry('cl.hackaton.blockchain.Commodity');
+    await assetRegistry.update(trade.commodity);
+  
+  	let ownerRegistry = await getParticipantRegistry('cl.hackaton.blockchain.Trader');
+    await ownerRegistry.updateAll([seller, buyer]);
+}
